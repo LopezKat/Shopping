@@ -10,7 +10,7 @@ import ItemSeparator from './components/item-separator';
 import HttpProduct from "../../services/Product/http-products";
 
 class Catalog extends Component{
-
+   
     constructor(props){
         super(props);
         this.state = {

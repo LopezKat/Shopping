@@ -17,8 +17,8 @@ export class LoginForm extends Component{
     constructor(props){
         super(props);
         this.state = {
-            email: 'lzulu@gmail.com',
-            password: '123456',
+            email: 'apulgarin@gmail.com',
+            password: '345678',
             error: '',
         }
     }
@@ -75,21 +75,12 @@ export class LoginForm extends Component{
 
             <View style={styles.wrapper}>
 
-                <View style={styles.heading}>
-                    <Image
-                        source={require('../../../../assets/tienda.png')}
+                <View style={styles.heading}>                
+                   <Image
+                        source={require('../../../../assets/carrito.jpg')}
                         style={styles.headingImage}
                         resizeMode="contain"
-                    />
-                </View>
-
-                <View style={[styles.greeting]}>
-                    <Text style={[styles.greeting]}>
-                        { i18n.t('WELCOME_BACK') }
-                    </Text>
-                    <Text style={[styles.greeting2]}>
-                        { i18n.t('SIGN_IN_TO_CONTINUE') }
-                    </Text>
+                   />
                 </View>
 
                 <View style={styles.inputContainer}>
@@ -112,6 +103,8 @@ export class LoginForm extends Component{
                         {this.state.error}
                     </Text>
                     <Button
+                        style={styles.button}
+                        color="#08088A"
                         title={ i18n.t('SIGN_IN') }
                         onPress={() => this.validate() }
                     />
@@ -146,25 +139,20 @@ const styles = StyleSheet.create({
         alignItems:  'flex-start'
     },
     headingImage: {
-        width: 38,
-        height: 38,
+        width: 100,
+        height: 100,
     },
     inputContainer: {
         marginTop: 24
-    },
-    greeting: {
-        marginTop: 20,
-        fontSize: 16,
-    },
-    greeting2: {
-        color: '#666',
-        fontSize: 16,
-        marginTop: 5,
-    },
+    },    
     error:{
         color: 'red',
         textAlign: 'center'
-    }
+    },
+    button:{
+        color: '#fff',
+        padding: 10
+    },
     
 });
 

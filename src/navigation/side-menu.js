@@ -3,8 +3,7 @@ import { Text, View, StyleSheet, ScrollView } from 'react-native'
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import Profile from '../scenes/Profile';
 
-export class SideMenu extends Component {
-    
+export class SideMenu extends Component {    
     constructor(props){
         super(props)
     }
@@ -16,17 +15,18 @@ export class SideMenu extends Component {
 
                     <View style={styles.itemSectionNav}>
                         <Text style={styles.textItemSectionNav} onPress={ ()=> this.props.navigation.navigate('StackScren') } > 
-                        <Icon name="list-alt" size={24} color="#70b124"/>   Catalogo </Text>
+                        <Icon name="list-alt" size={24} color="#3949AB"/>   Catalog </Text>
                     </View>
 
                     <View style={styles.itemSectionNav}>
                         <Text style={styles.textItemSectionNav} onPress={ ()=> this.props.navigation.navigate('StackCarScreen') } > 
-                        <Icon name="shopping-cart" size={24} color="#70b124"/>   Carrito de Compras </Text>
+                        <Icon name="shopping-cart" size={24} color="#3949AB"/>   Shopping Cart </Text>
                     </View>
 
 
                     <View style={styles.itemSectionNav}>
-                        <Text style={styles.textItemSectionNav} onPress={ ()=> this.props.navigation.navigate('Tabs') } > Tabs </Text>
+                        <Text style={styles.textItemSectionNav} onPress={ ()=> this.props.navigation.navigate('Tabs') } > 
+                        <Icon name="cog" size={24} color="#3949AB"/>   Settings </Text>
                     </View>
 
                 </ScrollView>
@@ -43,12 +43,12 @@ const styles = StyleSheet.create({
     container: {
         paddingTop: 50,
         flex: 1,
-        backgroundColor: '#ccc'
+        //backgroundColor: '#ccc'
     },
     itemSectionNav: {
         margin: 10,
         flexDirection: 'row',
-        backgroundColor: '#ccc'
+        //backgroundColor: '#ccc'
     },
     textItemSectionNav:{
         fontSize: 18,

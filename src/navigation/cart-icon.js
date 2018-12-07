@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
         position: 'absolute',
         height: 30,
         width: 30,
-        backgroundColor: 'red',
         right: 15, 
         bottom: 15,
         borderRadius: 15,

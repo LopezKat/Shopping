@@ -11,6 +11,7 @@ import i18n from './../../../i18n';
 
 
 class ProfileInfo extends Component {
+ 
     constructor(props) {
         super(props);
         this.state = {
@@ -48,7 +49,7 @@ class ProfileInfo extends Component {
                 <Text style={styles.profileName}> { this.state.dataUser.name } </Text>
                 <Text style={styles.username}> { this.state.dataUser.username }  </Text>
                 <Button style={styles.username}
-                    color="white"
+                    color="#08088A"
                     onPress={ this.closeSession } 
                     title={ i18n.t('CLOSE_SESSION') }
                 />
